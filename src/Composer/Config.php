@@ -38,6 +38,13 @@ class Config
     );
 
     public static $defaultRepositories = array(
+        'contao' => array(
+            'type' => 'composer',
+            'url' => 'http://packages-via.contao-community-alliance.org',
+            // TODO: @tristanlins generate ssl cert to be used on repository server.
+//            'url' => 'https?://packages-via.contao-community-alliance.org',
+//            'allow_ssl_downgrade' => true,
+        ),
         'packagist' => array(
             'type' => 'composer',
             'url' => 'https?://packagist.org',
