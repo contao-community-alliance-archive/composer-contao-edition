@@ -37,7 +37,10 @@
         "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
     },
     "autoload": {
-        "psr-0": { "Composer": "src/" }
+        "psr-0": {
+            "Composer": "src/",
+            "ContaoCommunityAlliance": "src/"
+        }
     },
     "bin": ["bin/composer"],
     "extra": {

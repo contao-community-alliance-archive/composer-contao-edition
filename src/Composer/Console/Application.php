@@ -21,11 +21,11 @@ use Symfony\Component\Console\Formatter\OutputFormatter;
 use Composer\Command;
 use Composer\Command\Helper\DialogHelper;
 use Composer\Composer;
-use Composer\Factory;
 use Composer\IO\IOInterface;
 use Composer\IO\ConsoleIO;
 use Composer\Json\JsonValidationException;
 use Composer\Util\ErrorHandler;
+use ContaoCommunityAlliance\Factory;
 
 /**
  * The console application that handles the commands
@@ -49,8 +49,8 @@ class Application extends BaseApplication
     private static $logo = '   ______
   / ____/___  ____ ___  ____  ____  ________  _____
  / /   / __ \/ __ `__ \/ __ \/ __ \/ ___/ _ \/ ___/
-/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ /
-\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__  )  __/ / Contao
+\____/\____/_/ /_/ /_/ .___/\____/____/\___/_/    Edition
                     /_/
 ';
 
